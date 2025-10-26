@@ -1,0 +1,179 @@
+:root {
+  --bg: #f6f8fb;
+  --accent: #0b6fb8;
+  --accent-2: #065a90;
+  --card: #fff;
+  --muted: #6b7280;
+  --radius: 12px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #111;
+}
+
+/* Header */
+header {
+  background: white;
+  box-shadow: 0 2px 6px rgba(10, 20, 40, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.logo img {
+  height: 34px;
+}
+
+nav a {
+  margin-left: 18px;
+  color: #222;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 30px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+  border-radius: var(--radius);
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 28px;
+  color: var(--accent-2);
+}
+
+.hero p {
+  color: var(--muted);
+  margin: 12px 0 18px;
+}
+
+.hero-right img {
+  width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(10, 20, 40, 0.12);
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn.small {
+  background: var(--accent-2);
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+/* Section umum */
+.section {
+  max-width: 1100px;
+  margin: 26px auto;
+  padding: 0 20px;
+}
+
+.judul-section {
+  color: var(--accent-2);
+}
+
+/* Grid produk */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 12px;
+}
+
+/* Card */
+.card {
+  background: var(--card);
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(11, 47, 80, 0.06);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 10px 0 6px;
+  font-size: 16px;
+}
+
+.card p {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+/* Kontak */
+.kontak p {
+  color: var(--muted);
+}
+
+/* Footer */
+footer {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Responsif */
+@media (max-width: 700px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-right img {
+    width: 80%;
+  }
+}
