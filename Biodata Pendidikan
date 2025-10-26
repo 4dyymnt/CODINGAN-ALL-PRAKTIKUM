@@ -1,0 +1,6 @@
+public class Perkenalan {
+    public static void main(String[] args) {
+        System.out.println("Hallo Nama Saya Aldi");
+        System.out.println("Saya Mahasiswa di Universitas Surya Kancana Cianjur");
+    }
+}
